@@ -14,8 +14,8 @@
            
 2.添加标签和图像至VOCdevkt文件
 
-   xml文件-->Annotations
-   image-->JPEGImages
+  xml文件-->Annotations
+  image-->JPEGImages
    
 3.voc_to_yolo  修改classes/ TRAIN_RATIO/ file path
 
