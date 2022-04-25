@@ -67,6 +67,28 @@ Through the use of Yolov5 model, the recognition of musical notes. And run it on
   	batch-size
   
   
-**7.runs/train/exp/labels、train_batch、weights**
+**7.runss**
+
+	runs
+	    --train
+	    	--exp1
+		   --weights
+		      --best.pt
+		      --last.bt
+		   --results.png
+		   --results.txt
+		   ......
+		--exp2
+		   --weights
+		      --best.pt
+		      --last.bt
+		   --results.png
+		   --results.txt
+		   ......
+		......
+	    --detect
+	    	--exp1
+		--exp2
+		.....
 
 **8.detect  weights、source、conf-thres、iou-thres**
