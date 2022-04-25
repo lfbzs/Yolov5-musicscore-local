@@ -2,9 +2,9 @@
 Through the use of Yolov5 model, the recognition of musical notes. And run it on your local computer
 
 
-**使用步骤：**
+**Using the step：**
 
-**1.make_voc_dir Generate voc format folder. Run only when first used
+**1.make_voc_dir Generate voc format folder. Run only when first used**
 
   	VOCdevkt
   
@@ -36,9 +36,9 @@ Through the use of Yolov5 model, the recognition of musical notes. And run it on
            --train
            --val
            
-**4.data/voc.yaml **
+**4.data/voc.yaml**
 
-		train path/ val path/ nc/ name
+	train path/ val path/ nc/ name
 
   	train path-->VOCdevkit/images/train/
   
@@ -48,9 +48,11 @@ Through the use of Yolov5 model, the recognition of musical notes. And run it on
   
   	name-->class names
   
-**5.models/.yaml Modify the  anchors/nc**
+**5.models/.yaml**
 
-**6.train  **
+	Modify the  anchors/nc
+
+**6.train**
 
   	weights-->initial weights path
   
