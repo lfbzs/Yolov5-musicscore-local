@@ -1,0 +1,10 @@
+1.make_voc_dir
+2.添加标签和图像至VOC文件
+3.voc_to_yolo  修改classes/ TRAIN_RATIO/ file path
+4.data/voc.yaml  train path/ val path/ nc/ name
+5.models/.yaml 修改anchors
+5.train  weights-weights/yolov5m.pt
+         cfg-models/yolov5m.yaml
+         data-data/voc.yaml
+6.runs/train/exp/labels、train_batch、weights
+7.detect  weights、source、conf-thres、iou-thres
