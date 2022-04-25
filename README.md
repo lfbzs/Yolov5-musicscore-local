@@ -3,8 +3,11 @@
 
 
 使用步骤：
+
 1.make_voc_dir 生成voc格式的文件夹。只需第一次使用时运行
+
   VOCdevkt
+  
        --VOC2007
            --Annotations
            --JPEGImages
