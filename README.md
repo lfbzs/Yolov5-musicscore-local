@@ -1,28 +1,28 @@
 # Yolov5-musicscore-local
-通过使用Yolov5模型，进行乐谱音符的识别。并在本地电脑上运行
+Through the use of Yolov5 model, the recognition of musical notes. And run it on your local computer
 
 
-使用步骤：
+**使用步骤：**
 
-1.make_voc_dir 生成voc格式的文件夹。只需第一次使用时运行
+**1.make_voc_dir Generate voc format folder. Run only when first used
 
-  VOCdevkt
+  	VOCdevkt
   
        --VOC2007
            --Annotations
            --JPEGImages
            
-2.添加标签和图像至VOCdevkt文件
+**2.Add labels and images to VOCdevkt files**
 
-  xml文件-->Annotations
+  	xml文件-->Annotations
   
-  image-->JPEGImages
+  	image-->JPEGImages
    
-3.voc_to_yolo  
+**3.voc_to_yolo**
 
-  修改classes/ TRAIN_RATIO/ file path
+  	Modify the  classes/ TRAIN_RATIO/ file path
 
-  在VOC2007文件中生成YOLOLabels文件，存储所有的标记文件
+  	YOLOLabels files are generated in VOC2007 files to store all tag files
   
     VOCdevkt
        --VOC2007
@@ -36,33 +36,35 @@
            --train
            --val
            
-4.data/voc.yaml  train path/ val path/ nc/ name
+**4.data/voc.yaml **
 
-  train path-->VOCdevkit/images/train/
-  
-  val path--> VOCdevkit/images/val/
-  
-  nc-->number of classes
-  
-  name-->class names
-  
-5.models/.yaml 修改anchors/nc
+		train path/ val path/ nc/ name
 
-5.train  
+  	train path-->VOCdevkit/images/train/
+  
+  	val path--> VOCdevkit/images/val/
+  
+  	nc-->number of classes
+  
+  	name-->class names
+  
+**5.models/.yaml Modify the  anchors/nc**
 
-  weights-->initial weights path
-  
-  cfg-->model.yaml path
-  
-  data-->data.yaml path
-  
-  hyp-->hyperparameters path
-  
-  epochs
-  
-  batch-size
-  
-  
-6.runs/train/exp/labels、train_batch、weights
+**6.train  **
 
-7.detect  weights、source、conf-thres、iou-thres
+  	weights-->initial weights path
+  
+  	cfg-->model.yaml path
+  
+  	data-->data.yaml path
+  
+  	hyp-->hyperparameters path
+  
+  	epochs
+  
+  	batch-size
+  
+  
+**7.runs/train/exp/labels、train_batch、weights**
+
+**8.detect  weights、source、conf-thres、iou-thres**
